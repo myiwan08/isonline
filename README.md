@@ -12,4 +12,5 @@ isOnline.detect(function(o){
 	} else {
 		console.log("Internet connectivity is unavailable.");
 	}
-});```
+});
+```
