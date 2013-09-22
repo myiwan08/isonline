@@ -12,7 +12,7 @@
 		 */
 		this.detect = function(callback) {
 			setInterval(function() { // Check every 5 seconds
-				if(typeof W.navigator.onLine !== "boolean") { // if HTML 5 browser
+				if(typeof W.navigator.onLine === "boolean") { // if HTML 5 browser
 					callback(W.navigator.onLine);
 				} else { // Check internet connection using an ajax request
 					_ajaxRequest(function(o){
